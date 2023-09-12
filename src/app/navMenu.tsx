@@ -58,6 +58,14 @@ export default function NavMenu() {
       >
         Client API
       </Link>
+      <Link
+        className={
+          pathname === "/apiFromServer" ? ACTIVE_ROUTE : INACTIVE_ROUTE
+        }
+        href={"/apiFromServer"}
+      >
+        Server API
+      </Link>
     </div>
   );
 }
